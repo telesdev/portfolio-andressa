@@ -1,0 +1,12 @@
+#logo-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    padding: 0 0.5em;
+}
