@@ -13,6 +13,10 @@ html {
     margin: auto;
 }
 
+section {
+    padding: 2em 0;
+}
+
 a {
     text-decoration: none;
     color: #cecece;
@@ -29,10 +33,20 @@ h1 {
 
 h2 {
     font-size: 2em;
+    padding: 0 0 0.5em 0;
 }
 
 h3 {
     font-size: 1.5em;
+}
+
+#about>div>p, #education>div>p {
+    text-align: justify;
+    padding: 0 0 2em 2em ;
+}
+
+.hide {
+    visibility: hidden;
 }
 
 #logo-menu {
@@ -63,10 +77,11 @@ h3 {
     opacity: 0.2;
 }
 
-#about {
+#about, #education {
     display: flex;
 }
 
 img {
-    max-width: 20em;
+    
+    max-height: 13em;
 }
