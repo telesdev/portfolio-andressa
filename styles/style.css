@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html {
+body {
     background-color: #0c0c0c;
     color: #cecece;
     font-family: 'Open Sans', sans-serif;
@@ -77,6 +77,16 @@ h3 {
     background-position: center;
     height: 700px;
     opacity: 0.2;
+    z-index: -1;
+    position: relative;
+}
+
+header {
+    background-color: #0c0c0c;
+    position: sticky;
+    top: 0;
+    height: 10em;
+    width: 100%;
 }
 
 #img-about {
@@ -97,8 +107,13 @@ h3 {
 }
 
 #about>div>p, #education>div>p {
-    text-align: justify;
+    text-align: left;
     font-size: large;
+    line-height: 1.7;
+}
+
+#education>div>p {
+    text-align: right;
 }
 
 #about, #education, #jobs>div {
@@ -148,11 +163,83 @@ h3 {
     display: flex;
 }
 
+#contacts>div>div {
+    width: 50%;
+}
+
 form {
     width: 50%;
-    border: 1px solid blue;
 }
 
 form>div>label, form>div>input, form>div>textarea, form>button {
-    width: 100%;
+    width: 90%;
+    display: block;
+}
+
+form>div>textarea {
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 5em;
+    max-height: 5em;
+    background-color: #cecece;
+}
+
+form>div>input {
+    margin-bottom: 1em;
+    border-radius: 2px;
+    height: 2em;
+    max-width: 100%;
+    background-color: #cecece;
+}
+
+form>div>input:focus, form>div>textarea:focus {
+    background-color: #b1aeae;
+}
+
+label {
+    padding-bottom: 1em;
+}
+
+button {
+    text-decoration: none;
+    color: #0c0c0c;
+    background-color: #cecece;
+    border-radius: 6px;
+    margin-top: 2em;
+    height: 3em;
+}
+
+button:hover {
+    color: #cecece;
+    background-color: #0c0c0c;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>div>p {
+    display: inline-block;
+}
+
+#social-media {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 5em;
+}
+
+#social-media>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+#social-media>div>p {
+    margin-bottom: 1em;
+}
+
+footer {
+    padding-bottom: 1em;
 }
