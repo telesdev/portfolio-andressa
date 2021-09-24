@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html {
     background-color: #0c0c0c;
     color: #cecece;
@@ -33,16 +39,12 @@ h1 {
 
 h2 {
     font-size: 2em;
-    padding: 0 0 0.5em 0;
+    padding: 0 0 1em 0;
+    text-align: center;
 }
 
 h3 {
     font-size: 1.5em;
-}
-
-#about>div>p, #education>div>p {
-    text-align: justify;
-    padding: 0 0 2em 2em ;
 }
 
 .hide {
@@ -69,7 +71,7 @@ h3 {
 }
 
 #home {
-    background-image: url('../images/Fairy\ -\ Sleeping\ Beauty.jpg');
+    background-image: url('../images/Fairy-Sleeping-Beauty.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -77,11 +79,80 @@ h3 {
     opacity: 0.2;
 }
 
-#about, #education {
+#img-about {
+    width: 40%;
+}
+
+#img-education {
+    width: 90%;
+}
+
+#about, #education, #jobs {
+    margin: 2em 0 0 0;
+}
+
+#about>div, #education>div {
+    width: 50%;
+    text-align: center;
+}
+
+#about>div>p, #education>div>p {
+    text-align: justify;
+    font-size: large;
+}
+
+#about, #education, #jobs>div {
     display: flex;
 }
 
-img {
+#jobs>div {
+    flex-direction: column;
+    display: flex;
+}
+
+.div-cards {
+    display: flex;
+    margin: auto;
+    padding: 0 0 2em 0;
+    align-items: flex-end;
+}
+
+#div-cards1 {
+    padding: 2em 0 0 0;
+}
+
+.card {
+    width: 400px;
+    margin: 0 5em 5em;
     
-    max-height: 13em;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 2px 30px 1px rgba(255, 255, 255, 0.2);
+}
+
+.img-card {
+    width: 100%;
+    padding: 0 0 2em 0;
+    margin: auto;
+
+}
+
+.p-card {
+    text-align: center;
+    margin: 0 0 2em 0;
+}
+
+#contacts>div {
+    display: flex;
+}
+
+form {
+    width: 50%;
+    border: 1px solid blue;
+}
+
+form>div>label, form>div>input, form>div>textarea, form>button {
+    width: 100%;
 }
