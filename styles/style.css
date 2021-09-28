@@ -243,3 +243,56 @@ footer>div>p {
 footer {
     padding-bottom: 1em;
 }
+
+@media (max-width: 960px) {
+    ul, #logo-menu, #header-container, #home-container, #footer-container, section, section>div, section>div>div, #about>div, #education>div {
+        width: 100%;
+        text-align: center;
+    }
+    ul>li {
+        margin: 1px 0;
+        font-size: smaller;
+    }
+    #logo {
+        transform: scale(0.7);
+        position: inherit;
+        top: 0;
+    }
+    header {
+        position: static;
+    }
+    #about>div, #education>div {
+        width: 90%;
+
+    }
+    #about>div>p, #education>div>p {
+        text-align: center;
+    }
+    #home {
+        background-size: auto;
+        background-position: bottom;
+    }
+    #header>div>div>nav>ul, #header>div>div, #about, #education, #jobs>div>div, #contacts>div{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .card {
+        padding: 1em;
+    }
+    form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    form>div, input, textarea {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contacts>div>div {
+       padding: 1em;
+    }
+}
